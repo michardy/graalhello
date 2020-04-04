@@ -1,6 +1,7 @@
 use scraper::{Html, Selector};
 
-fn main() {
+#[no_mangle]
+pub extern fn start() {
 	// Based heavily on the scraper crate readme
 	let html = r#"
 		<!DOCTYPE html>
